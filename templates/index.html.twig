@@ -1,5 +1,185 @@
 {% extends 'global.html.twig'%}
 
+
 {% block head %}
 	<title>Home - AC🖤EUR</title>
+{% endblock %}
+
+
+{% block content %}
+
+	<!-- Masthead-->
+	<header class="masthead">
+		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+			<div class="d-flex justify-content-center">
+				<div class="text-center">
+					<h1 class="mx-auto my-0 text-uppercase">Snow Tricks</h1>
+					<h2 class="text-white-50 mx-auto mt-2 mb-5">Retrouvez tous les tricks avec leur description photo et video.</h2>
+					<a class="btn btn-primary" href="#about">Voir la liste</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- About-->
+	<section class="about-section text-center" id="about">
+		<div class="container px-4 px-lg-5">
+			<div class="row gx-4 gx-lg-5 justify-content-center">
+				<div class="col-lg-8">
+					<h2 class="text-white mb-4">Les tricks de snow à connaître</h2>
+					<p class="text-white-50">
+						Pour les métiers créatifs, les prémices sont simples. Soit tu imites et dans le meilleur des cas tu te rapproches des meilleurs, soit tu inventes et alors il se peut que tu ailles plus loin. Le snowboard est l’un de ces métiers créatifs, et même si le chemin est long pour arriver à pro, les shreddeurs de métier n’ont pas tous leur propre style et de loin.
+					</p>
+				</div>
+			</div>
+			<img class="img-fluid" src="assets/img/snowboard-jumps-spins.png" alt="..."/>
+		</div>
+	</section>
+	<!-- Projects-->
+	<section class="projects-section bg-light" id="projects">
+		<div
+			class="container px-4 px-lg-5">
+			<!-- Featured Project Row-->
+			<div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+				<div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..."/></div>
+				<div class="col-xl-4 col-lg-5">
+					<div class="featured-text text-center text-lg-left">
+						<h4>Backside Air</h4>
+						<p class="text-black-50 mb-0">On commence tout simplement avec LE trick. Les mauvaises langues prétendent qu’un backside air suffit à reconnaître ceux qui savent snowboarder. Si c’est vrai, alors Nicolas Müller est le meilleur snowboardeur du monde. Personne ne sait s’étirer aussi joliment, ne demeure aussi zen, n’est aussi provocant dans la jouissance.</p>
+						<a class="btn btn-primary" href="#">En savoir plus</a>
+					</div>
+				</div>
+			</div>
+			<!-- Project One Row-->
+			<div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+				<div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..."/></div>
+				<div class="col-lg-6">
+					<div class="bg-black text-center h-100 project">
+						<div class="d-flex h-100">
+							<div class="project-text w-100 my-auto text-center text-lg-left">
+								<h4 class="text-white">One Foot Tricks</h4>
+								<p class="mb-0 text-white-50">Bode Merril est la preuve vivante que la réincarnation n’est pas un conte de fée. Dans sa vie antérieure de flamant rose, il avait déjà l’habitude d’affronter le quotidien sur une patte. Quelque 200 ans plus tard, il a eu la chance d’être un homme doté d’un snowboard, ce qui a fini par donner à son être l’élan nécessaire. Il aime bien s’avaler quelques one foot double backflips au p’tit déj.
+								</p>
+								<hr class="d-none d-lg-block mb-0 ms-0"/>
+								<a class="btn btn-primary" href="#">En savoir plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Project Two Row-->
+			<div class="row gx-0 justify-content-center">
+				<div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..."/></div>
+				<div class="col-lg-6 order-lg-first">
+					<div class="bg-black text-center h-100 project">
+						<div class="d-flex h-100">
+							<div class="project-text w-100 my-auto text-center text-lg-right">
+								<h4 class="text-white">Switch Backside Rodeo 720</h4>
+								<p class="mb-0 text-white-50">Si l’univers du snowboard a jamais disposé d’un scientifique, alors c’était David Benedek. Personne mieux que lui n’a su comment monter un kicker pour qu’un trick marche bien. En musique, on qualifie cela d’expérimental. Ce n’est pas un hasard si c’est précisément lui qui a eu l’idée de faire un switch BS rodeo.</p>
+								<hr class="d-none d-lg-block mb-0 me-0"/>
+								<a class="btn btn-primary" href="#">En savoir plus</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Signup-->
+	<section class="signup-section" id="signup">
+		<div class="container px-4 px-lg-5">
+			<div class="row gx-4 gx-lg-5">
+				<div class="col-md-10 col-lg-8 mx-auto text-center">
+					<i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+					<h2 class="text-white mb-5">Souscrivez à notre newsletter !</h2>
+					<!-- * * * * * * * * * * * * * * *-->
+					<!-- * * SB Forms Contact Form * *-->
+					<!-- * * * * * * * * * * * * * * *-->
+					<!-- This form is pre-integrated with SB Forms.-->
+					<!-- To make this form functional, sign up at-->
+					<!-- https://startbootstrap.com/solution/contact-forms-->
+					<!-- to get an API token!-->
+						<form
+						class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN"> <!-- Email address input-->
+						<div class="row input-group-newsletter">
+							<div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Ajoutez votre adresse mail" aria-label="Ajoutez votre adresse mail..." data-sb-validations="required,email"/></div>
+							<div class="col-auto">
+								<button class="btn btn-primary disabled" id="submitButton" type="submit">Me notifier !</button>
+							</div>
+						</div>
+						<div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+						<div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+						<!-- Submit success message-->
+						<!---->
+						<!-- This is what your users will see when the form-->
+						<!-- has successfully submitted-->
+							<div class="d-none" id="submitSuccessMessage"> <div class="text-center mb-3 mt-2 text-white">
+								<div class="fw-bolder">Form submission successful!</div>
+								To activate this form, sign up at
+								<br/>
+								<a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+							</div>
+						</div>
+						<!-- Submit error message-->
+						<!---->
+						<!-- This is what your users will see when there is-->
+						<!-- an error submitting the form-->
+							<div class="d-none" id="submitErrorMessage"> <div class="text-center text-danger mb-3 mt-2">Error sending message!</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact-->
+	<section class="contact-section bg-black">
+		<div class="container px-4 px-lg-5">
+			<div class="row gx-4 gx-lg-5">
+				<div class="col-md-4 mb-3 mb-md-0">
+					<div class="card py-4 h-100">
+						<div class="card-body text-center">
+							<i class="fas fa-map-marked-alt text-primary mb-2"></i>
+							<h4 class="text-uppercase m-0">Adresse</h4>
+							<hr class="my-4 mx-auto"/>
+							<div class="small text-black-50">4923 Market Street, Orlando FL</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-3 mb-md-0">
+					<div class="card py-4 h-100">
+						<div class="card-body text-center">
+							<i class="fas fa-envelope text-primary mb-2"></i>
+							<h4 class="text-uppercase m-0">Email</h4>
+							<hr class="my-4 mx-auto"/>
+							<div class="small text-black-50">
+								<a href="#!">hello@email.com</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-3 mb-md-0">
+					<div class="card py-4 h-100">
+						<div class="card-body text-center">
+							<i class="fas fa-mobile-alt text-primary mb-2"></i>
+							<h4 class="text-uppercase m-0">Téléphone</h4>
+							<hr class="my-4 mx-auto"/>
+							<div class="small text-black-50">+33 7 88 88 66 77
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="social d-flex justify-content-center">
+				<a class="mx-2" href="https://twitter.com/alexdosse">
+					<i class="fab fa-twitter"></i>
+				</a>
+				<a class="mx-2" href="https://www.facebook.com/alexandre.dossetto">
+					<i class="fab fa-facebook-f"></i>
+				</a>
+				<a class="mx-2" href="https://github.com/Alex-dos/OC_P6_SnowTricks">
+					<i class="fab fa-github"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+
 {% endblock %}

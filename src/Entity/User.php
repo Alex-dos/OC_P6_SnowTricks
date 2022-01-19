@@ -49,6 +49,12 @@ class User
      */
     private $user_id;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Comment::class, inversedBy="user_id")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $Titi;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -122,6 +128,18 @@ class User
     public function setUserId(?Trick $user_id): self
     {
         $this->user_id = $user_id;
+
+        return $this;
+    }
+
+    public function getTiti(): ?Comment
+    {
+        return $this->Titi;
+    }
+
+    public function setTiti(?Comment $Titi): self
+    {
+        $this->Titi = $Titi;
 
         return $this;
     }

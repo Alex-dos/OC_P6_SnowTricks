@@ -43,6 +43,12 @@ class User
      */
     private $avatar;
 
+    /**
+     * @ORM\ManyToOne(targetEntity=Trick::class, inversedBy="user_id")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $user_id;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -104,6 +110,18 @@ class User
     public function setAvatar(?string $avatar): self
     {
         $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    public function getUserId(): ?Trick
+    {
+        return $this->user_id;
+    }
+
+    public function setUserId(?Trick $user_id): self
+    {
+        $this->user_id = $user_id;
 
         return $this;
     }

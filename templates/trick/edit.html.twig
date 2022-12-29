@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Trick{% endblock %}
+
+{% block body %}
+    <div class="div-form-title">
+        <h1 class="centered-title">Mettre à jour trick</h1>
+    </div>
+
+    {{ include('trick/_form.html.twig', {'button_label': 'Update'}) }}
+
+{% endblock %}

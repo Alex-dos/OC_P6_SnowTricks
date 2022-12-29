@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div class="top"></div>
+            <div class="arrow arrow-up">
+                <button id="js-scroll-down">
+                    <img src="{{ asset('images/scroll-arrow.png') }}" alt="arrow-up">
+                </button>
+            </div>
+            <div class="div-home-title">
+                {% if is_granted('ROLE_USER') %}
+                    <h3 class="centered-title size-25px">Bienvenue {{ app.user }}</h3>
+                {% else %}
+                    <div class="centered-title size-25px">SNOWTRICKS</div>
+                {% endif %}
+                {% for message in app.flashes('success') %}
+                        <div class="flash-notice">
+                            {{ message }}
+                        </div>
+                {% endfor %}
+            </div>
+        <div id="scroll-down" class="tricks-container">
+            {% include 'trick/index.html.twig' %}
+            <span class="content-span"></span>
+            <div class="img-centered">
+                <button id="show-more"  class="show-more">Voir plus</button>
+                <div class="clock-loader"></div>
+                <span class="loader"><span class="loader-inner"></span></span>
+            </div>
+        </div>
+    <div class="arrow arrow-down">
+        <button id="js-scroll-top">
+            <img src="{{ asset('images/scroll-arrow.png') }}" alt="arrow-up">
+        </button>
+    </div>
+    <div class="down"></div>
+{% endblock %}
+{%block javascripts %}
+<script type="module" src="{{ asset('js/show-more.js') }}"></script>
+<script type="module" src="{{ asset('js/scroll-arrow.js') }}"></script>
+{% endblock %}

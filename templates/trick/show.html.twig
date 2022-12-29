@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Trick{% endblock %}
+
+{% block body %}
+    <div class="div-home-title">
+        <h3 class="centered-title size-25px">{{ trick.name }}</h3>
+    </div>
+    <div class="tricks-container">
+        <div class="container-show">
+            <div class="item">
+                {% for photos in trick.photos %}
+                    <img class="img-show" src="{{ asset('images/tricks/'~ photos.folderId ~'/'~ photos.path) }}"
+                         alt="{{ photos.path }}">
+                {% endfor %}
+            </div>
+            <div class="item">
+                {% for videos in trick.videos %}
+                    <iframe width="460" height="250" class="video-show" src="{{ videos.url }}"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="show-text-area">
+            <h2 class="title-trick">{{ trick.name }}
+                {% if is_granted('ROLE_USER') %}
+                    <a href="{{ path('trick_edit', {'id': trick.id}) }}">
+                        <div class="edit-icon"> ✎</div>
+                    </a>
+                {% endif %}
+            </h2>
+            <p>{{ trick.description }}</p>
+        </div>
+        <div class="sticker-show">
+            <p class="sticker">Date de creation : {{ trick.createdAt ? trick.createdAt|date('Y-m-d H:i:s') : '' }}</p>
+            <p class="sticker">Dernière modification : {{ trick.updatedAt ? trick.updatedAt|date('Y-m-d H:i:s') : ''}}</p>
+            <p class="sticker">Type : {{ trick.type }}</p>
+            <p class="sticker">Auteur : {{ trick.author }}</p>
+        </div>
+        <div class="comment-container form-group-1">
+            <h2 class="img-centered">Commentaires</h2>
+            {{ include('comment/_form_comment.html.twig') }}
+            {{ include('comment/_comment.html.twig') }}
+            <span class="content-span"></span>
+            <div class="img-centered">
+                <button id="show-more"  class="show-more">Voir plus</button>
+                <div class="clock-loader"></div>
+                <span class="loader"><span class="loader-inner"></span></span>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="{{ path('home') }}">back to list</a>
+
+    <a href="{{ path('trick_edit', {'id': trick.id}) }}">edit</a>
+
+    {{ include('trick/_delete_form.html.twig') }}
+{% endblock %}
+{% block javascripts %}
+    <script type="module" src="{{ asset('js/show-more-comment.js') }}"></script>
+{% endblock %}

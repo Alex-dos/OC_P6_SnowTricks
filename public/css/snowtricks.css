@@ -1,0 +1,702 @@
+.navbar-container {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    white-space: nowrap;
+    margin-top: 3%;
+}
+.error {
+    color: #b0413e;
+    font-weight: bold;
+}
+.alert {
+    color: #b0413e;
+    font-weight: bold;
+}
+.logo-snowtricks {
+    position: absolute;
+}
+.img-snowtricks-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 1)), url("https://images.unsplash.com/photo-1514454529242-9e4677563e7b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+    margin: -15px;
+}
+.form-over-background {
+    position: fixed;
+    top: 20%;
+    margin-right: 37%;
+}
+.form-trick {
+    background: #fff;
+    margin: 5% auto 0;
+    box-shadow: 0 0 1em #b4c5cb;
+    border-radius: 20px;
+}
+.arrow-down {
+    transform: rotate(180deg);
+    position: fixed;
+    visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+    .error {
+        color: #B0413E;
+        font-weight: bold;
+   }
+    .alert {
+        color: #B0413E;
+        font-weight: bold;
+   }
+    .flash-notice {
+        border-radius: 10px;
+        padding: 20px;
+        background-color: #22ed60;
+        margin-top: -300px;
+        text-align: center;
+   }
+   /* TRICK */
+    .comment-container {
+        margin: 5vw;
+   }
+    #comment_content {
+        height: 40px;
+        width: 400px;
+        margin: 1vh;
+   }
+    .sticker-show {
+        display: flex;
+        justify-content: space-evenly;
+   }
+    .container-show {
+        display: flex;
+        position: relative;
+        overflow-x: scroll;
+        margin-bottom: 50px;
+   }
+    .item {
+        display: contents;
+   }
+   /* TRICK */
+   /*FROM TRICK */
+    .form-group-1 input label {
+        background: white;
+        border: 0 none;
+        border-radius: 3px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 4px 50px;
+        box-sizing: border-box;
+        width: 90%;
+        margin: 0 10%;
+        position: relative;
+   }
+    .form-group-1 {
+        padding: 15px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        color: #2c3e50;
+        font-size: 13px;
+        border-radius: 20px;
+   }
+    .form-group-1 form {
+        width: 400px;
+        margin: 50px auto;
+        text-align: center;
+        position: relative;
+   }
+    .form-trick form {
+        display: flex;
+        justify-content: center;
+   }
+    .form-trick {
+        max-width: 15vw;
+        padding: 4em 30em;
+   }
+   /*FROM TRICK */
+   /*FROM LOGIN/REGISTER */
+    .form-over-background {
+        top: 20%;
+        margin-left: 37%;
+   }
+   /*FROM LOGIN/REGISTER */
+   /*HOME PAGE*/
+    .navbar ul {
+        display: flex;
+   }
+    .arrow-down {
+        left: 67%;
+        top: 86%;
+   }
+    .img-snowtricks-home {
+        width: 100%;
+        height: 15vh;
+   }
+    .navbar-container {
+        left: 65% !important;
+   }
+    .navbar li {
+        margin-right: 3%;
+   }
+    .logo-snowtricks {
+        width: 12vw;
+        left: 3%;
+        margin-top: 2%;
+        margin-bottom: 10px;
+   }
+    .table-card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+   }
+    .centered-title {
+        display: flex;
+        justify-content: center;
+        color: white;
+        text-align: center;
+   }
+    .arrow-up {
+        position: absolute;
+        left: 90%;
+        top: 70%;
+   }
+   /*HOME PAGE*/
+}
+@media screen and (max-width: 768px) {
+    .error {
+        color: #B0413E;
+        font-weight: bold;
+   }
+    .alert {
+        color: #B0413E;
+        font-weight: bold;
+   }
+    .form-login-register {
+        position: fixed;
+        top: 60%;
+   }
+    .flash-notice {
+        border: solid 2px springgreen;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: white;
+   }
+   /*TRICK */
+    .item {
+        width: 100%;
+   }
+    .comment_content {
+        width: 300px;
+   }
+    .show-text-area {
+        width: 300px;
+   }
+    iframe {
+        width: 300px !important;
+   }
+    .container-show {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+   }
+    .comment-container {
+        width: 340px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   }
+   /* TRICK */
+   /*FROM TRICK */
+    .form-trick {
+        padding: 0 5em;
+   }
+    .form-trick input {
+        width: 110px !important;
+   }
+    .form-trick textarea {
+        min-width: 120px;
+        min-height: 50px;
+   }
+    .btn-del {
+        left: 50px;
+   }
+    .form-group-1 {
+        width: 150px;
+   }
+   /*FROM TRICK */
+   /*FROM LOGIN/REGISTER */
+    .form-over-background {
+        top: 26%;
+        margin-left: 25%;
+   }
+   /*FROM LOGIN/REGISTER */
+   /*HOME PAGE*/
+    .arrow-down {
+        left: 72%;
+        top: 88%;
+   }
+    .img-snowtricks-home {
+        height: 60vh;
+   }
+    .logo-snowtricks {
+        width: 40vw;
+        top: 60%;
+        right: 32%;
+   }
+    .navbar-container {
+        left: 0 !important;
+   }
+    .navbar ul {
+        align-items: center;
+   }
+    .navbar li {
+        display: flex;
+        justify-content: center;
+        margin: 4%;
+   }
+    .table-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+   }
+    .centered-title {
+        display: none;
+   }
+    .arrow-up {
+        position: absolute;
+        left: 70%;
+        top: 65%;
+   }
+   /*HOME PAGE*/
+}
+* {
+    font-family: Verdana, sans-serif;
+}
+.div-home-title {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.arrow {
+    width: 60px;
+    display: none;
+    height: 60px;
+}
+.arrow button {
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+}
+.arrow button:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+   /*max-height: 100%;
+   */
+    height: auto;
+}
+.form-outer-background {
+    position: absolute;
+    top: 35%;
+}
+html, body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.banner-container {
+    text-align: center;
+    color: white;
+    margin: auto;
+    position: absolute;
+    width: 100%;
+    background-color: #ddd;
+}
+.div-form-title {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.size-25px {
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+.home-link {
+    display: flex;
+    justify-content: center;
+}
+.form-standard {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    padding: 4em 4em 2em;
+    max-width: 13vw;
+    margin: 50px auto 0;
+    box-shadow: 0 0 1em #b4c5cb;
+    border-radius: 20px;
+}
+.form-trick div {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
+.new-item {
+    margin-top: 10px;
+    display: flex;
+}
+.new-item input {
+    margin-top: 10px !important;
+}
+.btn-form {
+    width: 30vw;
+    height: 3vh;
+    z-index: 5;
+    margin: 30px 0px 20px 0px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+.form-standard input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.form-standard label {
+    left: 8px;
+    top: 12px;
+    color: #999;
+    font-size: 16px;
+    display: inline-block;
+    padding: 4px 10px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0);
+}
+.comment-container label {
+    height: 2vh;
+    margin: 1vh;
+}
+.photos-container .videos-container {
+    column-count: 1;
+    display: flex;
+    justify-content: center;
+}
+.videos-container input {
+    width: 30vh;
+}
+.form-standard button {
+    margin-top: 25px;
+    width: 100%;
+    background-color: white;
+    border: solid 2px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.form-standard button:hover {
+    margin-top: 25px;
+    cursor: pointer;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.11);
+    border: solid 2px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.form-trick input {
+    margin: 2%;
+}
+.centered-item {
+    display: inline-table;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 20px;
+}
+.navbar {
+    display: table-row;
+    text-align: justify !important;
+}
+.navbar a {
+    background-color: #f5f5f5;
+    color: #444;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+   /* border: solid #5eb5e0 3px;
+    */
+    box-shadow: hsl(240deg 7% 62%) 2px 2px 8px;
+}
+.navbar a:hover {
+    background-color: #ddd;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+.tricks-container {
+    position: absolute;
+    display: grid;
+    margin-right: 7%;
+    top: 30%;
+    margin-left: 7%;
+}
+.card-container {
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    BOX-SHADOW: #787e846b 2px 2px 6px;
+    border-radius: 10px;
+}
+.text-card {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    padding: 15px 0;
+    background-color: hsl(180deg 54% 86%);
+   /* margin-bottom: 30px;
+   */
+}
+.img-link {
+    display: flex;
+    justify-content: center;
+}
+.img-card {
+    display: flex;
+    max-height: 15vh !important;
+    margin: 15px;
+}
+.img-card img {
+    border-radius: 10%;
+}
+.img-centered {
+    display: flex;
+    justify-content: center;
+}
+.img-centered img {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.edit-icon {
+    margin-top: 2px;
+    color: black;
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+}
+.edit-icon .delete-icon {
+    position: center;
+}
+.delete-form {
+    display: contents;
+}
+.btn-delete {
+    border: none;
+    background: transparent !important;
+    font-size: 30px;
+}
+.btn-del {
+    color: darkred;
+}
+.btn-add {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-color: #5de6de;
+    background-image: linear-gradient(315deg, #f1ebe2 0%, #fff 74%);
+    border: solid 1px black;
+    border-radius: 50%;
+    transition: 200ms;
+    margin-top: 0.5vh;
+    margin-left: 1vw;
+    color: darkgreen;
+}
+.edit-title {
+    display: flex;
+    margin-bottom: 30px;
+}
+.btn-add:hover {
+    background-color: green !important;
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 1px;
+}
+.btn-delete:hover {
+    background-color: red !important;
+    border-radius: 5px;
+    padding-left: 3px;
+    padding-right: 1px;
+}
+.img-show {
+    margin: 10px;
+    height: 25vh;
+    width: 100vw;
+    max-width: 250px;
+    background: #b0bec5;
+    color: #fff;
+    display: inline-block;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 200px;
+    text-align: center;
+}
+.video-show {
+    margin: 10px;
+}
+.sticker {
+    background-color: rgb(115 174 197 / 21%);
+    color: #000;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.show-text-area {
+    background-color: rgb(0 0 0 / 5%);
+    color: #000;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid #9fa4a7 3px;
+}
+.show-text-area p {
+    text-justify: distribute-all-lines;
+}
+.title-trick {
+    display: flex;
+    justify-content: center;
+}
+.form-span {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+#trick_description {
+    width: 15vw;
+    height: 15vw;
+}
+#trick_type {
+    margin-top: 5px;
+    margin-left: 10px;
+    width: 14vw;
+}
+#trick_name {
+    width: 13vw 
+}
+.show-more {
+    background-color: #ccc (142, 165, 231, 0.84);
+    color: #333;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none !important;
+   /*border: solid #5eb5e0 3px;
+   */
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: hsl(240deg 7% 62%) 2px 2px 3px;
+}
+a.card-title {
+    color: #444;
+    font-family: arial black;
+    margin-top: 10px;
+}
+.show-more:hover {
+    background-color: #ddd;
+}
+.loader {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 4px solid #5eb5e0;
+    top: 93%;
+    animation: loader 2s infinite ease;
+    visibility: hidden;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #ddd;
+    animation: loader-inner 2s infinite ease-in;
+}
+.author-img {
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-picture {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin: 2vh;
+}
+.view-comment {
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: #999 1px solid;
+    border-radius: 20px;
+    background-color: #e1eef3;
+}
+.comment-text {
+    border: #000 2px solid;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    padding: 12px;
+    margin: 6px;
+}
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+   }
+    25% {
+        transform: rotate(180deg);
+   }
+    50% {
+        transform: rotate(180deg);
+   }
+    75% {
+        transform: rotate(360deg);
+   }
+    100% {
+        transform: rotate(360deg);
+   }
+}
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+   }
+    25% {
+        height: 0%;
+   }
+    50% {
+        height: 100%;
+   }
+    75% {
+        height: 100%;
+   }
+    100% {
+        height: 0%;
+   }
+}
+/* custom scrollbar */
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #73aec5;
+    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 4px solid transparent;
+    background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf;
+}

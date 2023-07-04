@@ -1,7 +1,7 @@
 # Alexandre Dosseto
 ## _Openclassrooms,P6,Snowtricks_
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/29687102e67e4a9289006ad981a23461)](https://www.codacy.com/gh/Alex-dos/OC_P6_SnowTricks/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Alex-dos/OC_P6_SnowTricks&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/aad529ba4a204a81a1180000a46dd001)](https://app.codacy.com/gh/Alex-dos/OC_P6_SnowTricks/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 
 ## Installation
 

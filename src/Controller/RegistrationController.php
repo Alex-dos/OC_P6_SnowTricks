@@ -41,7 +41,7 @@ class RegistrationController extends AbstractController
           $email = $user->getEmail();
 
             try {
-              if ($entityManager->getRepository('App:User')->findOneBy(['name' => $name])){
+              if ($entityManager->getRepository(User::class)->findOneBy(['name' => $name])){
                   throw new Exception();
               }
             } catch (Exception $exception) {
@@ -50,7 +50,7 @@ class RegistrationController extends AbstractController
             }
 
             try {
-                if ($entityManager->getRepository('App:User')->findOneBy(['email' => $email])){
+                if ($entityManager->getRepository(User::class)->findOneBy(['email' => $email])){
                     throw new Exception();
                 }
             } catch (Exception $exception) {

@@ -30,6 +30,6 @@ class LoginController extends AbstractController
      */
     public function logout(): void
     {
-        $this->redirectToRoute('home');
+        $this->redirectToRoute('index');
     }
 }

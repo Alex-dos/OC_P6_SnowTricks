@@ -101,7 +101,7 @@ class TrickController extends AbstractController
                                     $newSlug = str_replace($watch, $embed, $slug);
                                 }
 
-                                $fileVideo->setSlug($newSlug);
+                                $fileVideo->setUrl($newSlug);
                                 $fileVideo->setTrick($trick);
 
                                 $entityManager->persist($fileVideo);
@@ -174,7 +174,7 @@ class TrickController extends AbstractController
                 'comments' => $commentShow
             ], Response::HTTP_SEE_OTHER);
         }
-
+        
         return $this->render('trick/show.html.twig', [
             'trick' => $trick,
             'comments' => $commentShow,
@@ -208,7 +208,7 @@ class TrickController extends AbstractController
             $name = $form->get('name')->getData();
 
             try {
-                $name = $entityManager->getRepository('App:Trick')->findOneBy(['name' => $name]);
+                $name = $entityManager->getRepository(Tricks::class)->findOneBy(['name' => $name]);
                 if ($name == true && $name->getId() != $trick->getId()) {
                     throw new Exception();
                 } else {

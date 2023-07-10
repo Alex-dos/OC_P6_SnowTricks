@@ -16,7 +16,6 @@
             </div>
             <div class="item">
                 {% for videos in trick.videos %}
-                {{ dump(videos) }}
                     <iframe width="460" height="250" class="video-show" src="{{ videos.url }}"></iframe>
                 {% endfor %}
             </div>

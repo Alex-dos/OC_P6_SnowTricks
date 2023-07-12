@@ -167,6 +167,7 @@ class TrickController extends AbstractController
             $entityManager->persist($comment);
             $entityManager->flush();
 
+            
             return $this->redirectToRoute('trick_show', [
                 'slug' => $trick->getSlug(),
                 'trick' => $trick,
@@ -174,12 +175,13 @@ class TrickController extends AbstractController
                 'comments' => $commentShow
             ], Response::HTTP_SEE_OTHER);
         }
-        
+
         return $this->render('trick/show.html.twig', [
             'trick' => $trick,
             'comments' => $commentShow,
             'form' => $form->createView(),
         ]);
+        
     }
 
     /**
@@ -208,7 +210,7 @@ class TrickController extends AbstractController
             $name = $form->get('name')->getData();
 
             try {
-                $name = $entityManager->getRepository(Tricks::class)->findOneBy(['name' => $name]);
+                $name = $entityManager->getRepository(Trick::class)->findOneBy(['name' => $name]);
                 if ($name == true && $name->getId() != $trick->getId()) {
                     throw new Exception();
                 } else {
@@ -275,13 +277,9 @@ class TrickController extends AbstractController
                     $entityManager->persist($trick);
                     $entityManager->flush();
 
+                    $this->addFlash('success', 'Bravo, votre trick a bien été modifier ☑️ ! ');
+                    return $this->redirectToRoute('home', [], Response::HTTP_SEE_OTHER);
 
-                    return $this->redirectToRoute('trick_edit', [
-                        'id' => $trick->getId(),
-                        'trick' => $trick,
-                        'form' => $form
-                    ],
-                        Response::HTTP_SEE_OTHER);
                 }
 
             } catch (Exception $exception) {

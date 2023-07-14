@@ -39,7 +39,7 @@ php bin/console doctrine:fixtures:load
 
 Pour accéder à l'index, ouvrez votre navigateur et entrez l'adresse suivante :
 ```sh
-http://localhost/P6SnowTricks/home/
+http://127.0.0.1:8000/
 ```
 
 
@@ -48,3 +48,7 @@ http://localhost/P6SnowTricks/home/
 Vous pouvez accéder aux détails de chaque trick en cliquant sur son nom dans la carte.
 Vous pouvez vous inscrire et vous connecter.
 Une fois connecté, vous pouvez laisser un commentaire pour chaque trick et utiliser les fonctionnalités CRUD si nécessaire.
+
+## Attention
+
+Pour l'affichage des pages d'erreurs 404 ou autres, pensez à passer votre fichier .env et .env.local ligne 17 en "APP_ENV=prod"
